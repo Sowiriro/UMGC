@@ -13,61 +13,56 @@ public class StandardIODemo
     public static void main(String[] args) throws IOException
     {
         //variables to hold values
-        int favInt = 0; 
-        double favDouble = 0.0; 
-        int secondfavInt = 0; 
-        double secondfavDouble = 0.0;
-        boolean myBoolean = false;
-        short myShort = 0;
+        double studentEmplid = 0.0; 
+        double quiz1PersentageScore = 0.0; 
+        double quiz2PersentageScore = 0.0; 
+        double quiz3PersentageScore = 0.0; 
+        int yourAgeInMonth = 0;
+        double TemperatureInDegreeCelsius = 0.0;
 
-        //Define a InputStreamReader based on Standard Input (System.in)
         InputStreamReader isReader = new InputStreamReader(System.in); 
-        // Send the InputStreamReader to a BufferedReader
-        BufferedReader stdin ~ new BufferedReader(isReader);
+        BufferedReader stdin = new BufferedReader(isReader);
 
-        //Prompt the user to enter an int
-        System.out.println("Enter your favorite integer:"); 
-        //The readLine() method reads everything entered 
-        // However the Integer.parseInt() method converts 
-        // the value to an int
-        favInt = Integer.parseInt(stdin.readLine()); 
-
-        //Prompt the user to enter a double 
-        System.out.println("Enter your favorite double number:");
-        // Read the line and convert to a double 
-        favDouble = Double.ParseDouble(stdin.readLine());
-
-        //Print the results to verify your data 
-        System.out.println("Your favorite int is:" + favInt); 
-        System.out.println("Your favorite double is:" + favDouble); 
+        System.out.println("Enter your your Student EMPLID(0 - 999999):"); 
         
-        //Use the Scanner class to perform the same functionality  
+        studentEmplid = Double.parseDouble(stdin.readLine()); 
+
+        System.out.println("Enter your quiz1 percentage score (0.0 – 100.0):");
+
+        quiz1PersentageScore = Double.parseDouble(stdin.readLine());
+
         Scanner scannerIn = new Scanner(System.in);
 
         //Prompt the user to enter another int 
-        System.out.println("Enter your second favorite interger:"); 
+        System.out.println("Enter your quiz 2 percentage score(0.0 - 100.0):"); 
         // the nextInt() method scans the next int value  
-        secondfavInt = scannerIn.nextInt(); 
+        quiz2PersentageScore = scannerIn.nextDouble(); 
 
         //Prompt the user to enter another double 
-        System.out.println("Enter your second favorite double:"); 
+        System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
         // the nextInt() method scans the next double value  
-        secondfavDouble = scannerIn.nextDouble(); 
+        quiz3PersentageScore = scannerIn.nextDouble(); 
 
         // Prompt the user toenter a boolean
-        System.out.println("Enter your favorite boolean value:"); 
+        System.out.println("Enter your age in months (0-1440):"); 
         // the nextBoolean() method scans the next boolean value  
-        myBoolean = scannerIn.nextBoolean();
+        yourAgeInMonth = scannerIn.nextInt();
 
         //Prompt the user to enter a short 
-        System.out.println("Enter your second favorite short:"); 
+        System.out.println("Enter the current Temperature in degrees Celsius:"); 
         // the nextInt() method scans the next short value  
-        myShort = scannerIn.nextShort(); 
+        TemperatureInDegreeCelsius = scannerIn.nextShort(); 
+
 
         //Print the results to verify your data 
-        System.out.println("Your second favorite int is : "+ secondfavInt);
-        System.out.println("Your second favorite double is : "+ secondfavDouble);
-        System.out.println("Your second favorite boolean is : "+ myBoolean);
-        System.out.println("Your second favorite short is : "+ myShort);
+        System.out.println("Student EMPLID: "+ secondfavInt);
+        System.out.println("Quiz 1 Score:"+ secondfavDouble);
+        System.out.println("Quiz 2 Score: "+ myBoolean);
+        System.out.println("Quiz 3 Score: "+ myShort);
+        System.out.println("Average quiz score: "+ secondfavInt);
+        System.out.println("Age in months: "+ secondfavDouble);
+        System.out.println("Age in years: "+ myBoolean);
+        System.out.println("Temperature in Celsius: "+ myShort);
+        System.out.println("Temperature in Fahrenheit: "+ myShort);
     }
 }
