@@ -17,52 +17,58 @@ public class StandardIODemo
         double quiz1PersentageScore = 0.0; 
         double quiz2PersentageScore = 0.0; 
         double quiz3PersentageScore = 0.0; 
+        double averageQuizScore = 0.0;
         int yourAgeInMonth = 0;
         double TemperatureInDegreeCelsius = 0.0;
 
         InputStreamReader isReader = new InputStreamReader(System.in); 
         BufferedReader stdin = new BufferedReader(isReader);
 
+
+        //prompt the user's Student EMPLID
         System.out.println("Enter your your Student EMPLID(0 - 999999):"); 
-        
         studentEmplid = Double.parseDouble(stdin.readLine()); 
 
+        // prompt the users quiz 1
         System.out.println("Enter your quiz1 percentage score (0.0 – 100.0):");
-
         quiz1PersentageScore = Double.parseDouble(stdin.readLine());
 
+        // For  functionally 
         Scanner scannerIn = new Scanner(System.in);
 
-        //Prompt the user to enter another int 
+        //Prompt the user's quiz 2
         System.out.println("Enter your quiz 2 percentage score(0.0 - 100.0):"); 
-        // the nextInt() method scans the next int value  
         quiz2PersentageScore = scannerIn.nextDouble(); 
 
-        //Prompt the user to enter another double 
+        //Prompt the user's quiz 3
         System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
-        // the nextInt() method scans the next double value  
         quiz3PersentageScore = scannerIn.nextDouble(); 
 
-        // Prompt the user toenter a boolean
-        System.out.println("Enter your age in months (0-1440):"); 
-        // the nextBoolean() method scans the next boolean value  
-        yourAgeInMonth = scannerIn.nextInt();
+        // Prompt the user age in month
+        // System.out.println("Enter your age in months (0-1440):"); 
+        // yourAgeInMonth = scannerIn.nextInt();
 
-        //Prompt the user to enter a short 
-        System.out.println("Enter the current Temperature in degrees Celsius:"); 
-        // the nextInt() method scans the next short value  
-        TemperatureInDegreeCelsius = scannerIn.nextShort(); 
+        //Prompt the user's TemperatureInDegreeCelsius
+        // System.out.println("Enter the current Temperature in degrees Celsius:"); 
+        // TemperatureInDegreeCelsius = scannerIn.nextShort(); 
 
 
         //Print the results to verify your data 
-        System.out.println("Student EMPLID: "+ secondfavInt);
-        System.out.println("Quiz 1 Score:"+ secondfavDouble);
-        System.out.println("Quiz 2 Score: "+ myBoolean);
-        System.out.println("Quiz 3 Score: "+ myShort);
-        System.out.println("Average quiz score: "+ secondfavInt);
-        System.out.println("Age in months: "+ secondfavDouble);
-        System.out.println("Age in years: "+ myBoolean);
-        System.out.println("Temperature in Celsius: "+ myShort);
-        System.out.println("Temperature in Fahrenheit: "+ myShort);
+        System.out.println("Student EMPLID: "+ studentEmplid);
+        System.out.println("Quiz 1 Score:"+ quiz1PersentageScore);
+        System.out.println("Quiz 2 Score: "+ quiz2PersentageScore);
+        System.out.println("Quiz 3 Score: "+ quiz3PersentageScore);
+        // System.out.println("Average quiz score: "+ secondfavInt);
+        // System.out.println("Age in months: "+ secondfavDouble);
+        // System.out.println("Age in years: "+ myBoolean);
+        // System.out.println("Temperature in Celsius: "+ myShort);
+        // System.out.println("Temperature in Fahrenheit: "+ myShort);
     }
+
+    // public double CalcusAverage(double quiz1PersentageScore, double quiz2PersentageScore, double quiz3PersentageScore)
+    // {
+    //     double averageQuizScore = 0.0;
+    //     averageQuizScore = (quiz1PersentageScore + quiz2PersentageScore + quiz3PersentageScore) / 3;
+    //     return averageQuizScore;
+    // }
 }
