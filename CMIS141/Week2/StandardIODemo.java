@@ -19,6 +19,7 @@ public class StandardIODemo
         double quiz3PersentageScore = 0.0; 
         double averageQuizScore = 0.0;
         int yourAgeInMonth = 0;
+        int yourAgeInYear = 0; 
         double TemperatureInDegreeCelsius = 0.0;
 
         InputStreamReader isReader = new InputStreamReader(System.in); 
@@ -44,11 +45,15 @@ public class StandardIODemo
         System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
         quiz3PersentageScore = scannerIn.nextDouble(); 
 
+        // to calucurate average
         averageQuizScore = CalcusAverage(quiz1PersentageScore, quiz2PersentageScore, quiz3PersentageScore);
 
         //Prompt the user age in month
         System.out.println("Enter your age in months (0-1440):"); 
         yourAgeInMonth = scannerIn.nextInt();
+
+        // to calucurate month to year
+        yourAgeInYear = CalcusAgeInYear(yourAgeInMonth);
 
         //Prompt the user's TemperatureInDegreeCelsius
         System.out.println("Enter the current Temperature in degrees Celsius:"); 
@@ -62,7 +67,7 @@ public class StandardIODemo
         System.out.println("Quiz 3 Score: "+ quiz3PersentageScore);
         System.out.println("Average quiz score: "+ averageQuizScore);
         System.out.println("Age in months: "+ yourAgeInMonth);
-        // System.out.println("Age in years: "+ );
+        System.out.println("Age in years: "+ yourAgeInYear);
         System.out.println("Temperature in Celsius: "+ TemperatureInDegreeCelsius + "°");
         // System.out.println("Temperature in Fahrenheit: "+ myShort);
     }
@@ -74,5 +79,12 @@ public class StandardIODemo
         averageQuizScore = (quiz1PersentageScore + quiz2PersentageScore + quiz3PersentageScore) / 3;
         return averageQuizScore;
     }
-    
+
+    //  to calucurate average from age in months.
+    public static int CalcusAgeInYear(int AgeInMonth)
+    {
+        int ageInYear = 0;
+        ageInYear = AgeInMonth / 12;
+        return ageInYear;
+    }
 }
