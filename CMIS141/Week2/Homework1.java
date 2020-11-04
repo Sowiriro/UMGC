@@ -95,7 +95,7 @@ public class Homework1
     //  to calucurate average from age in months.
     public static int CalculateAgeInYear(int AgeInMonth)
     {
-        final int yourAgeInYear = 0; 
+        int yourAgeInYear = 0; 
         yourAgeInYear = AgeInMonth / 12;
         return yourAgeInYear;
     }
