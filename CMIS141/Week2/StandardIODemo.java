@@ -21,6 +21,7 @@ public class StandardIODemo
         int yourAgeInMonth = 0;
         int yourAgeInYear = 0; 
         double TemperatureInDegreeCelsius = 0.0;
+        double TempretureInDegreeFahrenheit = 0.0;
 
         InputStreamReader isReader = new InputStreamReader(System.in); 
         BufferedReader stdin = new BufferedReader(isReader);
@@ -45,19 +46,22 @@ public class StandardIODemo
         System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
         quiz3PersentageScore = scannerIn.nextDouble(); 
 
-        // to calucurate average
-        averageQuizScore = CalcusAverage(quiz1PersentageScore, quiz2PersentageScore, quiz3PersentageScore);
+        // To calculate average
+        averageQuizScore = CalculateAverage(quiz1PersentageScore, quiz2PersentageScore, quiz3PersentageScore);
 
         //Prompt the user age in month
         System.out.println("Enter your age in months (0-1440):"); 
         yourAgeInMonth = scannerIn.nextInt();
 
-        // to calucurate month to year
-        yourAgeInYear = CalcusAgeInYear(yourAgeInMonth);
+        // to calculate month to year
+        yourAgeInYear = CalculateAgeInYear(yourAgeInMonth);
 
-        //Prompt the user's TemperatureInDegreeCelsius
+        //Prompt the Celsius
         System.out.println("Enter the current Temperature in degrees Celsius:"); 
         TemperatureInDegreeCelsius = scannerIn.nextDouble(); 
+
+        // to calculate the fahrentheit
+        TempretureInDegreeFahrenheit = CalculateFahrenheit(TemperatureInDegreeCelsius);
 
 
         //Print the results to verify your data 
@@ -69,11 +73,11 @@ public class StandardIODemo
         System.out.println("Age in months: "+ yourAgeInMonth);
         System.out.println("Age in years: "+ yourAgeInYear);
         System.out.println("Temperature in Celsius: "+ TemperatureInDegreeCelsius + "°");
-        // System.out.println("Temperature in Fahrenheit: "+ myShort);
+        System.out.println("Temperature in Fahrenheit: "+ TempretureInDegreeFahrenheit);
     }
 
     // to calucurate average from quiz sum
-    public static double CalcusAverage(double quiz1PersentageScore, double quiz2PersentageScore, double quiz3PersentageScore)
+    public static double CalculateAverage(double quiz1PersentageScore, double quiz2PersentageScore, double quiz3PersentageScore)
     {
         double averageQuizScore = 0.0;
         averageQuizScore = (quiz1PersentageScore + quiz2PersentageScore + quiz3PersentageScore) / 3;
@@ -81,10 +85,17 @@ public class StandardIODemo
     }
 
     //  to calucurate average from age in months.
-    public static int CalcusAgeInYear(int AgeInMonth)
+    public static int CalculateAgeInYear(int AgeInMonth)
     {
         int ageInYear = 0;
         ageInYear = AgeInMonth / 12;
         return ageInYear;
+    }
+
+    public static double CalculateFahrenheit(double TemperatureInDegreeCelsius)
+    {
+        double Fahrenheit = 0.0;
+        Fahrenheit = (TemperatureInDegreeCelsius * 1.8) + 32; 
+        return Fahrenheit; 
     }
 }
