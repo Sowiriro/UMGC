@@ -14,12 +14,12 @@ public class StandardIODemo
     {
         //variables to hold values
         double studentEmplid = 0.0; 
-        double quiz1PersentageScore = 0.0; 
-        double quiz2PersentageScore = 0.0; 
-        double quiz3PersentageScore = 0.0; 
-        double averageQuizScore = 0.0;
-        int yourAgeInMonth = 0;
-        double TemperatureInDegreeCelsius = 0.0;
+        // double quiz1PersentageScore = 0.0; 
+        // double quiz2PersentageScore = 0.0; 
+        // double quiz3PersentageScore = 0.0; 
+        // double averageQuizScore = 0.0;
+        // int yourAgeInMonth = 0;
+        // double TemperatureInDegreeCelsius = 0.0;
 
         InputStreamReader isReader = new InputStreamReader(System.in); 
         BufferedReader stdin = new BufferedReader(isReader);
@@ -30,19 +30,19 @@ public class StandardIODemo
         studentEmplid = Double.parseDouble(stdin.readLine()); 
 
         // prompt the users quiz 1
-        System.out.println("Enter your quiz1 percentage score (0.0 – 100.0):");
-        quiz1PersentageScore = Double.parseDouble(stdin.readLine());
+        // System.out.println("Enter your quiz1 percentage score (0.0 – 100.0):");
+        // quiz1PersentageScore = Double.parseDouble(stdin.readLine());
 
-        // For  functionally 
-        Scanner scannerIn = new Scanner(System.in);
+        // // For  functionally 
+        // Scanner scannerIn = new Scanner(System.in);
 
-        //Prompt the user's quiz 2
-        System.out.println("Enter your quiz 2 percentage score(0.0 - 100.0):"); 
-        quiz2PersentageScore = scannerIn.nextDouble(); 
+        // //Prompt the user's quiz 2
+        // System.out.println("Enter your quiz 2 percentage score(0.0 - 100.0):"); 
+        // quiz2PersentageScore = scannerIn.nextDouble(); 
 
-        //Prompt the user's quiz 3
-        System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
-        quiz3PersentageScore = scannerIn.nextDouble(); 
+        // //Prompt the user's quiz 3
+        // System.out.println("Enter your quiz 3 percentage score(0.0 - 100.0):"); 
+        // quiz3PersentageScore = scannerIn.nextDouble(); 
 
         // Prompt the user age in month
         // System.out.println("Enter your age in months (0-1440):"); 
@@ -55,9 +55,9 @@ public class StandardIODemo
 
         //Print the results to verify your data 
         System.out.println("Student EMPLID: "+ studentEmplid);
-        System.out.println("Quiz 1 Score:"+ quiz1PersentageScore);
-        System.out.println("Quiz 2 Score: "+ quiz2PersentageScore);
-        System.out.println("Quiz 3 Score: "+ quiz3PersentageScore);
+        // System.out.println("Quiz 1 Score:"+ quiz1PersentageScore);
+        // System.out.println("Quiz 2 Score: "+ quiz2PersentageScore);
+        // System.out.println("Quiz 3 Score: "+ quiz3PersentageScore);
         // System.out.println("Average quiz score: "+ secondfavInt);
         // System.out.println("Age in months: "+ secondfavDouble);
         // System.out.println("Age in years: "+ myBoolean);
