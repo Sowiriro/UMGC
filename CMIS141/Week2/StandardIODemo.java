@@ -65,6 +65,7 @@ public class StandardIODemo
 
 
         //Print the results to verify your data 
+        System.out.println("Thank you for entering ;)");
         System.out.println("Student EMPLID: "+ studentEmplid);
         System.out.println("Quiz 1 Score:"+ quiz1PersentageScore);
         System.out.println("Quiz 2 Score: "+ quiz2PersentageScore);
