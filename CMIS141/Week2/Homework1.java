@@ -1,3 +1,9 @@
+
+// HomeWork1
+// Soichiro Ono
+// 2020/11/3
+// To assist student becoming comfortable coding in Java and to display data that user enter.
+
 // Import each required Java class
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -8,7 +14,7 @@ import java.util.Scanner;
     Standard I/O Demo
 */
 
-public class StandardIODemo 
+public class HomeWork1
 {
     public static void main(String[] args) throws IOException
     {
@@ -23,6 +29,7 @@ public class StandardIODemo
         double TemperatureInDegreeCelsius = 0.0;
         double TempretureInDegreeFahrenheit = 0.0;
 
+        // make input instances
         InputStreamReader isReader = new InputStreamReader(System.in); 
         BufferedReader stdin = new BufferedReader(isReader);
 
@@ -65,7 +72,7 @@ public class StandardIODemo
 
 
         //Print the results to verify your data 
-        System.out.println("Thank you for entering ;)");
+        System.out.println("****  Thank you for entering the data ;) *****");
         System.out.println("Student EMPLID: "+ studentEmplid);
         System.out.println("Quiz 1 Score:"+ quiz1PersentageScore);
         System.out.println("Quiz 2 Score: "+ quiz2PersentageScore);
@@ -88,11 +95,12 @@ public class StandardIODemo
     //  to calucurate average from age in months.
     public static int CalculateAgeInYear(int AgeInMonth)
     {
-        int ageInYear = 0;
-        ageInYear = AgeInMonth / 12;
-        return ageInYear;
+        final int yourAgeInYear = 0; 
+        yourAgeInYear = AgeInMonth / 12;
+        return yourAgeInYear;
     }
 
+    //  to calucurate Fahrenheit
     public static double CalculateFahrenheit(double TemperatureInDegreeCelsius)
     {
         double Fahrenheit = 0.0;
