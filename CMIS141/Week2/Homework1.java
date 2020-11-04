@@ -14,7 +14,7 @@ import java.util.Scanner;
     Standard I/O Demo
 */
 
-public class HomeWork1
+public class Homework1
 {
     public static void main(String[] args) throws IOException
     {
