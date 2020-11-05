@@ -7,11 +7,19 @@ public class Discussion
 {
     public static void main(String[] args)
     {
+        //declare list of  hands
         String[] hands = {"rock", "scissors", "paper"};
 
-        Random r = new  Random();
+        // make it random
+        Random r = new Random();
+
+        // loop for three times
         for(int i = 0; i< 3; i++){
+
+            // choose hand form hands list randomly.
             String hand = hands[r.nextInt(3)];
+
+            // print  hand 
             System.out.println(hand);
         }
     }
