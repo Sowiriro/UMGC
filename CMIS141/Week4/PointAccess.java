@@ -15,7 +15,8 @@ public class PointAccess {
    // Default constructor
     public PointAccess () {
         x = 0.0;
-         = 0.0; }
+        y= 0.0; 
+    }
     // Setter methods
     // setX
     public void setX(double px) {
