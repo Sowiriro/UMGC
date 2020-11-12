@@ -1,7 +1,7 @@
 /*
 * File: PointAccess.java
-* Author: Dr. Robertson
-* Date: January 1, 2015
+* Author: Soichiro Ono
+* Date: November 12, 2020
 * Purpose: This program constructs instances * of the Point class and uses
 * its methods
 */
@@ -14,16 +14,16 @@ public class PointAccess {
         y = py; }
    // Default constructor
     public PointAccess () {
-x = 0.0;
-y = 0.0; }
+        x = 0.0;
+         = 0.0; }
     // Setter methods
     // setX
     public void setX(double px) {
-x = px; }
+        x = px; }
     // setY()
    public void setY(double py)  {
-y = py; }
-6
+        y = py; 
+    }
 // Getter methods
    // getX
     public double getX() {
@@ -31,18 +31,20 @@ y = py; }
     }
     // getY
     public double getY() {
-return y; }
+        return y; 
+    }
     // Use Math method to get the distance
 // between 2 points
-private double getDistance(PointAccess p1, PointAccess p2) {
+    private double getDistance(PointAccess p1, PointAccess p2) {
 // delta x
-double deltaX = Math.abs(p1.getX() - p2.getX()); // delta y
-double deltaY = Math.abs(p1.getY() - p2.getY());
+        double deltaX = Math.abs(p1.getX() - p2.getX()); // delta y
+        double deltaY = Math.abs(p1.getY() - p2.getY());
 // Distance formula
-double distance = Math.sqrt(deltaX*deltaX + deltaY*deltaY); return distance;
-}
+        double distance = Math.sqrt(deltaX*deltaX + deltaY*deltaY); return distance;
+    }
     // toString method
     public String toString() {
-String str = "(" + x + ", " + y + ")";
-return str; }
+        String str = "(" + x + ", " + y + ")";
+        return str; 
+    }
 }
