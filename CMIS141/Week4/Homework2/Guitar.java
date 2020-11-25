@@ -1,9 +1,8 @@
 /**
  * Created by Soichiro Ono on 11/15/2021.
  * CMIS 141 - Homework2
- * This class exists so that the state can be represented
- * as an object as opposed to a multi-dimensional array.
- * The case switch assigns variable data to the State object.
+ * Purpose: This program constructs instances * of the Point class and uses
+ * its methods
  */
 
 import  java.util.Random;

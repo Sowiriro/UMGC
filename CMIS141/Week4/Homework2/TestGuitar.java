@@ -1,3 +1,10 @@
+/**
+* Created by Soichiro Ono on 11/15/2021.
+* CMIS 141 - Homework2
+* Purpose: This program constructs instances * of the Point class and uses
+* its methods
+*/
+
 
 import java.awt.Color;
 
