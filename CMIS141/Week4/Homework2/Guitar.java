@@ -107,7 +107,8 @@ public class Guitar {
         //initiate a random number
         Random rn = new Random();
         //for loop to select 16 random notes
-        for (int k=0;k<16;k++){a = rn.nextInt(7);
+        for (int k=0;k<16;k++){
+            a = rn.nextInt(7);
             b = rn.nextInt(5);
             play = play + notes[a] + "(" + String.valueOf(duration[b]) + ")";
             if (k!=15) play = play + ",";
